@@ -9,7 +9,7 @@ eval "$(conda shell.bash hook)"
 # activating a conda environment. The name of the environment could be anything.
 conda activate bioinfo
 
-#in the same directory where your .fq files are, create a file named "samplenames.txt" where you list all your samples that you want to run. 
+#in the same directory where your .fq files are, create a file named "samplenames.txt" where you list all your samples that you want to run without file extensions. 
 #Here we are aligning to An stephensi genome, and filtering out anything that doesn't align. then exporting to .bam format.
 for i in `cat samplenames.txt`
 do
