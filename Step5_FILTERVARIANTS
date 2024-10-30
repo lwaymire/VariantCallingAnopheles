@@ -11,7 +11,7 @@ conda activate bioinfo
 # Here we are filtering biallelic variants as multiallelic variants can complicate downstream analysis.
 bcftools view -Oz -m 2 -M 2 -q 0.01:minor nameoffile.calls.norm.flt-indels.vcf.gz -o nameoffile.calls.biallelic.vcf.gz --threads 5
 
-# indexing the input file
+# Here we are indexing the input file.
 bcftools index nameoffile.calls.biallelic.vcf.gz
 
 done
