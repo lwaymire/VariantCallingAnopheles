@@ -4,10 +4,8 @@
 # locating the directory with data
 cd /absolute/path/to/the/working/directory
 
-# setting background for conda environment activation
-eval "$(conda shell.bash hook)"
-
 # Here we are setting the background for conda environment activation. This will retrieve details of the packages installed on Miniconda.
+eval "$(conda shell.bash hook)"
 conda activate bioinfo
 
 # Here we are calling the variants using bcftools. Ploidy is set to 2 because An. stephensi is a diploid organism.
