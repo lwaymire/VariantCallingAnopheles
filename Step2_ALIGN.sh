@@ -1,7 +1,9 @@
 #!/usr/bin/bash
 #PBS -l nodes=1:ppn=15
 
-cd /data/
+# Here we are locating the directory with data that we are working on and the results will be saved.
+# "<absolute/path/to/the/working/directory>" part to the absoulute path to your data files
+cd <absolute/path/to/the/working/directory>
 
 # Here we are setting the background for conda environment activation. This will retrieve details of the packages installed on Miniconda.
 eval "$(conda shell.bash hook)"
