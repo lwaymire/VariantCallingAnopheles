@@ -9,10 +9,10 @@ cd <absolute/path/to/the/working/directory>
 eval "$(conda shell.bash hook)"
 conda activate bioinfo
 
-#unzip files
+# Here we are unzipping files with gunzip.
 gunzip *.gz
 
-# quality check
+# Here we are running the fastQC program. 
 fastqc -t 5 *.fq
  
 echo "worked!"
