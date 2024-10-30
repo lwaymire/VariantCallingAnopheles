@@ -13,5 +13,6 @@ conda activate bioinfo
 #Here we are aligning to An stephensi genome, and filtering out anything that doesn't align. then exporting to .bam format.
 for i in `cat samplenames.txt`
 do
-bowtie2 -x ../../anstephUCI/Anstep ${i}.fq --no-unal -p 15 | samtools view -bS -o ${i}_output.bam
+
+bowtie2 -x path/to/reference/Anstep ${i}.fq --no-unal -p 15 | samtools view -bS -o ${i}_output.bam
 done
