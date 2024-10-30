@@ -2,12 +2,12 @@
 #PBS -l nodes=1:ppn=10
 
 # locating the directory with data
-cd location
+cd /absolute/path/to/the/working/directory
 
 # setting background for conda environment activation
 eval "$(conda shell.bash hook)"
 
-# activating 'bio2' environment with conda
+# activating environment with conda
 conda activate bioinfo
 
 # call variants
