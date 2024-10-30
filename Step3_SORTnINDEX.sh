@@ -7,8 +7,6 @@ cd <absolute/path/to/the/working/directory>
 
 # Here we are setting the background for conda environment activation. This will retrieve details of the packages installed on Miniconda.
 eval "$(conda shell.bash hook)"
-
-# activating a conda environment. The name of the environment could be anything.
 conda activate bioinfo
 
 # The for loop will iterate through the list of bam files in the directory specified in line 9
