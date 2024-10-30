@@ -8,7 +8,7 @@ cd <absolute/path/to/the/working/directory>
 # setting background for conda environment activation
 eval "$(conda shell.bash hook)"
  
-# activating 'bioinfo' environment with conda
+# Here we are setting the background for conda environment activation. This will retrieve details of the packages installed on Miniconda.
 conda activate bioinfo
 
 #unzip files
