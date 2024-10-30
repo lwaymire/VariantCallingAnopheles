@@ -7,8 +7,6 @@ cd <absolute/path/to/the/working/directory>
 
 # Here we are setting the background for conda environment activation. This will retrieve details of the packages installed on Miniconda.
 eval "$(conda shell.bash hook)"
-
-# Here we are setting the background for conda environment activation. This will retrieve details of the packages installed on Miniconda.
 conda activate bioinfo
 
 #in the same directory where your .fq files are, create a file named "samplenames.txt" where you list all your samples that you want to run without file extensions. 
