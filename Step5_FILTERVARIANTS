@@ -10,7 +10,7 @@ eval "$(conda shell.bash hook)"
 # # Here we are setting the background for conda environment activation. This will retrieve details of the packages installed on Miniconda.
 conda activate bioinfo
 
-# Here we are filtering biallelic variants as we only want variants that are covered on both copies of chromosomes.
+# Here we are filtering biallelic variants as multiallelic variants can complicate downstream analysis.
 bcftools view -Oz -m 2 -M 2 -q 0.01:minor nameoffile.calls.norm.flt-indels.vcf.gz -o nameoffile.calls.biallelic.vcf.gz --threads 5
 
 # indexing the input file
